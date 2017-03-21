@@ -1,0 +1,61 @@
+.header {
+  color: #9DC5BB;
+  font-size: 400%;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+}
+
+p {
+    font-size: 135%;
+    font-family: 'Tenor Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#two li {
+    font-size: 135%;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+img {
+    width: 85%;
+    height: 75%;
+    margin: 0;
+    padding: 0;
+}
+
+#statement p {
+    font-size: 150%
+}
+
+#number {
+    font-size: 200%;
+}
+
+#email {
+    font-size: 200%;
+}
+
+text {
+    font-size: 90%;
+}
+
+.container-fluid {
+  background-color: #6f5e5c;
+  font-size: 150%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.topic {
+  font-size: 150%;
+  color: #18314f;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.description {
+  font-size: 100%;
+}
