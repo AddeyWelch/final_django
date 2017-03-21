@@ -1,0 +1,63 @@
+{% load bootstrap3 %} {% load static %} {% bootstrap_css %} {% bootstrap_javascript %} {% block content %}
+<head>
+    <meta charset="utf-8">
+
+    <title>Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/bif.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- JavaScript & jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <h1 class='header'>Welcome To Bounce Into Fun</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rental.html">Rentals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class='topic'><i class="fa fa-fw fa-compass"></i>ABOUT</h4>
+            </div>
+            <div>
+              <p>Bounce Into Fun is a company that provides inflatables for any special occasion. Whether you are celebrating a birthday party, carnival, holiday, or for a family reunion, we’re here to help make it happen. We will provide all necessary equipment
+                  needed, along with excellent service because we value your business.
+                  <br /> We offer high quality inflatables at discount rental prices. Our inflatables are very durable, kid safe and 100% cleaned and sanitized in-between every rental. We are fully licensed and insured.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class='topic'><i class="fa fa-fw fa-compass"></i>RULES</h4>
+            </div>
+            <div>
+              <ul id='two'>
+                  <li>All persons must remove shoes, glasses, jewelry, and anything else that may harm the bounce house or others.</li>
+                  <li>No flips, somersaults, or horseplay.</li>
+                  <li>Do not run and/or bounce against the walls.</li>
+                  <li>Do not run or jump through the door of the bounce house.</li>
+                  <li>Do not climb or hang from the interior or exterior of the bounce house.</li>
+                  <li>No food or drink inside or near (within 10 feet) of the bounce house.</li>
+                  <li>Keep all pets away.</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+{% endblock %}
