@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from . import views
 
-app_name = 'BounceIntoFun'
+app_name = 'mysite'
 
 urlpatterns = [
     url(r'^home$', views.home, name='home'),

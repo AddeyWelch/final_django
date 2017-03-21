@@ -4,12 +4,12 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'rent/home.html')
+    return render(request, 'Rent/home.html')
 
 
 def rental(request):
-    return render(request, 'rent/rental.html')
+    return render(request, 'Rent/rental.html')
 
 
 def contact(request):
-    return render(request, 'rent/contact.html')
+    return render(request, 'Rent/contact.html')
