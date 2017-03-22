@@ -14,8 +14,8 @@ function addToCart(bouncer_name) {
     $("#total").text(total);
     var quan_id = "#" + bouncer_name;
     var quantity = Number($(quan_id).text());
-    if (quantity >= 0) {
-        quantity++;
+    if (quantity >= 20) {
+        quantity--;
         $(quan_id).text(quantity);
         alert(bouncer_name + ' Bouncer was added to the cart for $' + price);
     } else {
@@ -31,7 +31,7 @@ function removeFromCart(bouncer_name) {
     if (quantity >= 1) {
       total -= price;
       $("#total").text(total);
-      quantity--;
+      quantity++;
       $(quan_id).text(quantity);
       alert(bouncer_name + ' Bouncer was removed from the cart');
     } else {
