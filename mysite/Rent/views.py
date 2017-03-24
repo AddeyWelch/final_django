@@ -8,6 +8,7 @@ def home(request):
 
 
 def rental(request):
+    print('This worked')
     return render(request, 'Rent/rental.html')
 
 
