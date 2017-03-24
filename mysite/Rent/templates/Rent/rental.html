@@ -81,6 +81,7 @@
             </div>
         </div>
     </div>
+    {% for bounce in all_bounces %}
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -97,7 +98,7 @@
               </text>
                 <br>
                 <label>Price: </label>
-                <text>$100</text>
+                <text>${{ bounce.price }}</text>
             </div>
             <div>
               <form action="rental">
@@ -107,6 +108,7 @@
             </div>
         </div>
     </div>
+    {% endfor %}
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="panel panel-default">
             <div class="panel-heading">
