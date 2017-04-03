@@ -10,20 +10,19 @@ def home(request):
 
 def rental(request):
     # context to a variable Ex. {'Name': Name}
-    print('This worked')
-    return render(request, 'Rent/rental.html')
+    bouncers = Bounce.objects.all()
+    return render(request, 'Rent/rental.html', {'bouncers': bouncers})
 
 
 def contact(request):
     return render(request, 'Rent/contact.html')
 
-
-def view_name(request, url, quantity, price, description):
-    all_bounces = Bounce.objects.all()
-    context = {'all_bounces': all_bounces}
-    # context = {
-    #     'Quantity': 20,
-    #     'Prices': [100, 175],
-    #     'Description':
-    # }
-    return render(request, 'rental.html', context)
+# def view_name(request, url, image, quantity, price, description):
+#     all_bounces = Bounce.objects.all()
+#     context = {'all_bounces': all_bounces}
+#     context = {
+#         'Quantity': 20,
+#         'Prices': [100, 175],
+#         'Description':
+#     }
+#     return render(request, 'rental.html', context)
