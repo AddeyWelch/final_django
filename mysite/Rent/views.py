@@ -31,7 +31,7 @@ def rent(request, item_id):
     else:
         item.quantity -= 1
         item.save()
-        messages.success(request, item.name + ' was successfully added.')
+        messages.success(request, item.name + ' was successfully rented.')
     return redirect('mysite:rental')
 
 
@@ -42,5 +42,5 @@ def remove(request, item_id):
     else:
         item.quantity += 1
         item.save()
-        messages.success(request, item.name + ' was successfully removed.')
+        messages.success(request, item.name + ' was successfully returned.')
     return redirect('mysite:rental')
