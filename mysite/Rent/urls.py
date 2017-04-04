@@ -9,7 +9,11 @@ urlpatterns = [
         name='rental'),
     url(r'^contact$', views.contact,
         name='contact'),
-    url(r'^cart/$', views.view_form, name='cart'),
+    url(r'^rent/(?P<item_id>[0-9]+)/$',
+        views.rent, name='rent'),
+    url(r'^remove/(?P<item_id>[0-9]+)/$',
+        views.remove,
+        name='remove'),
 ]
 
 # r'^home$' = expressions

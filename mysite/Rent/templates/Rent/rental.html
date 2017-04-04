@@ -196,40 +196,40 @@
             <div class="panel-heading">
                 <div>
                     <div>
-                        <p>
-                            {{ each.name }}
-                        </p>
+                        <h4 class='topic'><i class="fa fa-fw fa-compass"></i> {{ each.name }} </h4>
                     </div>
                     <div>
                         <img class="img-responsive img-portfolio" src= {{ each.image }}>
                     </div>
                     <div>
-                        <p>
-                          Quantity:
-                            {{ each.quantity }}
+                        <p class='info'>
+                            Quantity: {{ each.quantity }}
                         </p>
                     </div>
                     <div>
-                        <p>
-                          Price:
-                            {{ each.price }}
+                        <p class='info'>
+                            Price: {{ each.price }}
                         </p>
                     </div>
                     <div>
-                        <p>
+                        <p class='info'>
                             {{ each.description }}
                         </p>
                     </div>
-                    <form method="POST">
-                      {% csrf_token %}
-                      {{ form.as_p }}
-                      <input type="submit" value="Add To Cart"></input>
-                      <input type="submit" value="Remove From Cart"></input>
+                    <form action="{% url 'mysite:rent' each.id %}" method="POST">
+                        {% csrf_token %}
+                        <input type="submit" value="RENT"></input>
+                    </form>
+                    <form action="{% url 'mysite:remove' each.id %}" method="POST">
+                        {% csrf_token %}
+                        <input type="submit" value="RETURN"></input>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    {% endfor %} {% for message in messages %}
+    <div class='alert alert-{{ message.tags }}'>{{ message }}</div>
     {% endfor %}
     <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="panel panel-default">
